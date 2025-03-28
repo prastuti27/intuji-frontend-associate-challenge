@@ -1,15 +1,12 @@
+import Sidebar from './components/sidebar';
+import { menuItems } from './data/sidebar';
 
-
-
-function App() {
-
-
+const App = () => {
   return (
     <>
-      
-     
+      <Sidebar menuItems={menuItems} />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
