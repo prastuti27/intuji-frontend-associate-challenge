@@ -1,3 +1,4 @@
+import Dashboard from "./components/dashboard";
 import Header from "./components/header";
 import Sidebar from "./components/sidebar";
 import { menuItems } from "./data/sidebar";
@@ -5,9 +6,16 @@ import { menuItems } from "./data/sidebar";
 const App = () => {
   return (
     <>
-      <Sidebar menuItems={menuItems} />
-
-      <Header />
+      {" "}
+      <aside className="sidebar">
+        <Sidebar menuItems={menuItems} />
+      </aside>
+      <header className="header">
+        <Header />
+      </header>
+      <main>
+        <Dashboard />
+      </main>
     </>
   );
 };

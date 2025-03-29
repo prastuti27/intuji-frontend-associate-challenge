@@ -16,7 +16,7 @@ interface SidebarProps {
 
 const Sidebar = ({ menuItems }: SidebarProps) => {
   return (
-    <div className={styles.sidebar}>
+    <>
       <div className={styles.logoContainer}>
         <div className={styles.logo}>
           <img src="/assets/icons/logo.svg" alt="Logo" />
@@ -54,7 +54,7 @@ const Sidebar = ({ menuItems }: SidebarProps) => {
           ))}
         </ul>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -2,7 +2,7 @@ import styles from "../../styles/sass/header.module.scss";
 
 const Header = () => {
   return (
-    <header className={styles.header}>
+    <>
       <div className={styles.headerBar}>
         <div className={`${styles.searchContainer}`}>
           <input
@@ -36,7 +36,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </header>
+    </>
   );
 };
 

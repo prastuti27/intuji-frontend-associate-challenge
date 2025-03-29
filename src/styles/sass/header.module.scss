@@ -1,69 +1,64 @@
-.header {
-  margin-left: 280px;
-  padding: 32px;
+.headerBar {
+  display: flex;
+  gap: 24px;
+}
 
-  .headerBar {
-    display: flex;
-    gap: 24px;
+.searchContainer {
+  position: relative;
+  width: 100%;
+
+  .searchBtn {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
   }
+}
 
-  .searchContainer {
-    position: relative;
-    width: 100%;
+.searchInput {
+  padding: 24px 20px 24px 46px;
+  width: 100%;
+  border-radius: 100px;
+  border: none;
+}
 
-    .searchBtn {
-      position: absolute;
-      left: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
+.userContainer {
+  display: flex;
+  max-width: 350px;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  padding: 8px;
+  background-color: #ffffff;
 
-  .searchInput {
-    padding: 24px 20px 24px 46px;
-    width: 100%;
+  .userItem {
+    padding: 12px 21px;
+    border: 1px solid #dedede;
     border-radius: 100px;
-    border: none;
+    max-width: 66px;
+    max-height: 48px;
   }
 
-  .userContainer {
+  .userProfile {
     display: flex;
-    max-width: 350px;
-    width: 100%;
     align-items: center;
-    gap: 10px;
-    border-radius: 100px;
-    padding: 8px;
-    background-color: #ffffff;
+    gap: 8px;
 
-    .userItem {
-      padding: 12px 21px;
-      border: 1px solid #dedede;
-      border-radius: 100px;
-      max-width: 66px;
-      max-height: 48px;
-    }
+    .userImage {
+      background-color: #00000033;
+      padding: 12px;
+      max-width: 45px;
+      max-height: 45px;
+      border-radius: 50%;
+      position: relative;
 
-    .userProfile {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-
-      .userImage {
-        background-color: #00000033;
-        padding: 12px;
-        max-width: 45px;
-        max-height: 45px;
+      &::after {
+        content: "";
+        position: absolute;
+        inset: -2px;
+        border: 1px solid #d9d9d9;
         border-radius: 50%;
-        position: relative;
-
-        &::after {
-          content: "";
-          position: absolute;
-          inset: -2px;
-          border: 1px solid #d9d9d9;
-          border-radius: 50%;
-        }
       }
     }
   }
