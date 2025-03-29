@@ -1,22 +1,29 @@
-import styles from '../../styles/sass/sidebar.module.scss';
+import styles from "../../styles/sass/sidebar.module.scss";
 
-interface MenuItem {
-    menuItems: {
-      label: string;
-      icon: string;
-      link: string;
-    }[];
-  }
-  
+interface MenuGroup {
+  label: string;
+  icon: string;
+  link: string;
+}
 
-const Sidebar = ({menuItems}:MenuItem) => {
+interface SidebarProps {
+  menuItems: {
+    items?: MenuGroup[];
+    list?: MenuGroup[];
+    menu?: MenuGroup[];
+  };
+}
+
+const Sidebar = ({ menuItems }: SidebarProps) => {
   return (
     <div className={styles.sidebar}>
-      <div className={styles.logo}>
-        <img src="/assets/icons/logo.svg" alt="Logo" />
+      <div className={styles.logoContainer}>
+        <div className={styles.logo}>
+          <img src="/assets/icons/logo.svg" alt="Logo" />
+        </div>
       </div>
       <ul className={styles.menuGroup}>
-        {menuItems.map((item, index) => (
+        {menuItems.items?.map((item, index) => (
           <li key={index} className={styles.menuItem}>
             <a href={item.link}>
               <img src={item.icon} alt={item.label} />
@@ -25,6 +32,28 @@ const Sidebar = ({menuItems}:MenuItem) => {
           </li>
         ))}
       </ul>
+      <div className={styles.lastMenu}>
+        <ul>
+          {menuItems.list?.map((item, index) => (
+            <li key={index} className={styles.menuItem}>
+              <a href={item.link}>
+                <img src={item.icon} alt={item.label} />
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <ul>
+          {menuItems.menu?.map((item, index) => (
+            <li key={index} className={styles.menuItem}>
+              <a href={item.link}>
+                <img src={item.icon} alt={item.label} />
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
