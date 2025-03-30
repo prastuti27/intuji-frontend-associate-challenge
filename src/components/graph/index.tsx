@@ -16,7 +16,7 @@ interface ChartProps {
 const AnalyticsChart = ({ colors }: ChartProps) => {
   return (
     <div className={styles.analyticsContainer}>
-      <div className={`space-between ${styles.titleBox}`}>
+      <div className={` ${styles.titleBox}`}>
         <h3>Analytics</h3>
 
         <div className={styles.legend}>
@@ -24,32 +24,32 @@ const AnalyticsChart = ({ colors }: ChartProps) => {
             <span
               className={styles.legendLabel}
               style={{ backgroundColor: colors.label1 }}
-            ></span>{" "}
+            ></span>
             Label1
           </div>
           <div className={styles.legendItem}>
             <span
               className={styles.legendLabel}
               style={{ backgroundColor: colors.label2 }}
-            ></span>{" "}
+            ></span>
             Label2
           </div>
           <button className={styles.dropdownBtn}>
-            Weekly{" "}
+            Weekly
             <img src="/assets/icons/chevron-down.svg" alt="chevron-down" />
           </button>
         </div>
       </div>
-      <ResponsiveContainer width="100%">
+      <ResponsiveContainer width="100%" height={270}>
         <AreaChart data={data}>
           <defs>
             <linearGradient id="colorLabel1" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor={colors.label1} stopOpacity={0.6} />
+              <stop offset="5%" stopColor={colors.label1} stopOpacity={0.2} />
               <stop offset="95%" stopColor={colors.label1} stopOpacity={0} />
             </linearGradient>
 
             <linearGradient id="colorLabel2" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor={colors.label2} stopOpacity={0.6} />
+              <stop offset="5%" stopColor={colors.label2} stopOpacity={0.2} />
               <stop offset="95%" stopColor={colors.label2} stopOpacity={0} />
             </linearGradient>
           </defs>

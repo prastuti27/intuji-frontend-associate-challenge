@@ -5,6 +5,8 @@ import BudgetCard from "../progress";
 import { budgets } from "../../data/budget";
 import AnalyticsChart from "../graph";
 import { labelColors } from "../../data/chart";
+import TransactionList from "../transactionBox";
+import { transactions } from "../../data/transaction";
 
 const Dashboard = () => {
   return (
@@ -14,7 +16,7 @@ const Dashboard = () => {
           <h3>Overview</h3>
           <div className="row custom-gap">
             {cardData.map((card) => (
-              <div key={card.id} className="col-6">
+              <div key={card.id} className="col-md-6">
                 <Card {...card} />
               </div>
             ))}
@@ -29,7 +31,7 @@ const Dashboard = () => {
             {budgets.map((budget, index) => (
               <div
                 key={index}
-                className={index === budgets.length - 1 ? "" : styles.margin}
+                className={index === budgets.length - 1 ? "" : "list-margin"}
               >
                 <BudgetCard {...budget} />
               </div>
@@ -37,10 +39,20 @@ const Dashboard = () => {
           </div>
         </section>
       </div>
-
-      <section>
-        <AnalyticsChart colors={labelColors} />
-      </section>
+      <div className="layout">
+        <section>
+          <AnalyticsChart colors={labelColors} />
+        </section>
+        <section className={`${styles.planBox}`}>
+          <div className={`  ${styles.planTitle}`}>
+            <h3>Recent Transaction</h3>
+            <a href="">See all</a>
+          </div>
+          <div>
+            <TransactionList transactions={transactions} />
+          </div>
+        </section>
+      </div>
     </>
   );
 };
