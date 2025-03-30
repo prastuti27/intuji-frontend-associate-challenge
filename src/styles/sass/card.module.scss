@@ -3,9 +3,36 @@
   border: 1px solid #dedede33;
   border-radius: 50%;
   max-height: 48px;
+
   max-width: 48px;
+  display: flex;
+  img {
+    max-height: 32px;
+    max-width: 32px;
+  }
 }
 .cardContainer {
   display: flex;
+
   gap: 9px;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  p {
+    color: #e6e6e6;
+    font-size: 12px;
+    line-height: 100%;
+  }
+  h4 {
+    margin-bottom: 9px;
+  }
+  .compareWrapper {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    img {
+      max-height: 14px;
+      max-width: 14px;
+    }
+  }
 }

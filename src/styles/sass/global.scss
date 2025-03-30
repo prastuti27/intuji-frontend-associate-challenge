@@ -33,7 +33,8 @@ a {
 h1,
 h2,
 h3,
-h4 {
+h4,
+p {
   color: #0d163a;
   margin-bottom: 0;
 }
@@ -52,6 +53,12 @@ h2 {
   line-height: 100%;
   font-weight: 600;
 }
+span {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #667085;
+}
 button {
   background-color: transparent;
   border: none;
@@ -68,11 +75,16 @@ section {
   border-radius: 14px;
   margin-bottom: 32px;
   padding: 16px;
+  width: 100%;
+  h3 {
+    margin-bottom: 24px;
+  }
 }
 .card {
   padding: 20px;
   color: #ffffff;
   border-radius: 14px;
+  border: 1px solid #dededeb2;
   background-color: #ffffff;
   &:first-child {
     background-color: #4745a4;
@@ -95,4 +107,17 @@ section {
 .custom-gap {
   --bs-gutter-y: 18px;
   --bs-gutter-x: 18px;
+}
+.layout {
+  display: flex;
+  gap: 24px;
+}
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fw-500 {
+  font-weight: 500;
 }

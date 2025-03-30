@@ -18,14 +18,17 @@ const Card = ({ title, balance, percentage, icon, exportIcon }: CardProps) => {
         </div>
         <div>
           <h4>{title}</h4>
-          <div>
+          <div className={styles.compareWrapper}>
             <img src={exportIcon} alt="export" />
             <p>{percentage} compared with last month</p>
           </div>
         </div>
       </div>
-      <div>
+      <div className="d-flex justify-content-between">
         <h2>{balance}</h2>
+        <div>
+          <img src="/assets/icons/arrow-light.svg" alt="arrow-light" />
+        </div>
       </div>
     </div>
   );

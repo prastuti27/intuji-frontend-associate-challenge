@@ -3,7 +3,7 @@ import styles from "../../styles/sass/header.module.scss";
 const Header = () => {
   return (
     <>
-      <div className={styles.headerBar}>
+      <div className="layout">
         <div className={`${styles.searchContainer}`}>
           <input
             type="text"

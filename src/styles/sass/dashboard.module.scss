@@ -1,9 +1,18 @@
-.dashboardContainer {
-  h3 {
-    margin-bottom: 24px;
-  }
+.overviewBox {
   h4 {
     font-size: 18px;
     line-height: 26px;
+  }
+}
+.planBox {
+  max-width: 350px;
+  .planTitle {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dededeb2;
+    margin-bottom: 24px;
+  }
+  .margin {
+    margin-bottom: 24px;
   }
 }
