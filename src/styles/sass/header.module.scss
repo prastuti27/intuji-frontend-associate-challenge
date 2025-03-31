@@ -61,6 +61,28 @@ justify-content: end;
     }
   }
 }
+.smallSidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60vw;
+  height: 100vh;
+  background: white;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.smallSidebar.open {
+  transform: translateX(0);
+}
+
+.mobileSidebar {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
 @media (min-width: 768px) {
   .searchInput {
     padding: 24px 20px 24px 46px;
@@ -76,5 +98,12 @@ justify-content: end;
   .headerContainer{
     display: flex;
     gap: 24px;
+ 
+  }
+  .smallSidebar {
+
+    width: 28vw;
+  
   }
 }
+

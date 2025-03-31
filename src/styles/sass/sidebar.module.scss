@@ -4,8 +4,7 @@
   justify-content: space-between;
 }
 .logoContainer {
-  padding: 36px;
-
+ 
   .logo {
     background-color: #d9d9d9;
 
@@ -31,8 +30,23 @@
 }
 
 .menuItem {
-  padding: 20px 50px;
+  padding: 16px 20px;
   img {
     margin-right: 16px;
   }
+}
+@media (min-width: 1200px) {
+  .logoContainer {
+    padding: 36px;}
+    .menuItem {
+      padding: 20px 50px;
+      img {
+        margin-right: 16px;
+      }
+    }
+    .menuGroup {
+      position: relative;
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+    }
 }

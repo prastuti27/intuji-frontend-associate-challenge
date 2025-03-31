@@ -129,6 +129,14 @@ section {
 .list-margin {
   margin-bottom: 24px;
 }
+.overlay {
+  position: fixed;
+ inset :0;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1
+}
+
+
 
 @media (min-width: 768px) {
   h4 {
@@ -151,5 +159,7 @@ section {
   .layout {
     display: flex;
     gap: 24px;
+    max-width: 1600px;
+    margin: auto;
   }
 }

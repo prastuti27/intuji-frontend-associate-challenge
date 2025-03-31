@@ -30,7 +30,7 @@ const Dashboard = () => {
         </section>
       </div>
         <div className={styles.planBox}>
-
+      
         <section>
           <div className={`  ${styles.planTitle}`}>
             <h3>Saving Plan</h3>
@@ -51,6 +51,7 @@ const Dashboard = () => {
           <div className={`  ${styles.planTitle}`}>
             <h3>Recent Transaction</h3>
             <a href="">See all</a>
+            
           </div>
           <div>
             <TransactionList transactions={transactions} />

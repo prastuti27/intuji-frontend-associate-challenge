@@ -1,3 +1,4 @@
+
 import styles from "../../styles/sass/sidebar.module.scss";
 
 interface MenuGroup {
@@ -12,9 +13,11 @@ interface SidebarProps {
     list?: MenuGroup[];
     menu?: MenuGroup[];
   };
+
 }
 
 const Sidebar = ({ menuItems }: SidebarProps) => {
+ 
   return (
     <>
       <div className={`${styles.logoContainer}`}>
