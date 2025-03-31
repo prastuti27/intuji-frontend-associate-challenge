@@ -18,7 +18,7 @@ const Dashboard = () => {
           <h3>Overview</h3>
           <div className="row custom-gap">
             {cardData.map((card) => (
-              <div key={card.id} className="col-md-6">
+              <div key={card.id} className={`col-md-6 ${styles.cardBox}`}>
                 <Card {...card} />
               </div>
             ))}

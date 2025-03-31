@@ -5,7 +5,8 @@ export const cardData = [
     balance: "$ 28,891.138",
     percentage: "15%",
     icon: "/assets/icons/wallet.svg",
-    exportIcon: "/assets/icons/export.svg",
+    exportIcon: "/assets/icons/export-green.svg",
+    firstChild:true
   },
   {
     id: 2,
@@ -13,7 +14,7 @@ export const cardData = [
     balance: "$ 1,050.44",
     percentage: "10%",
     icon: "/assets/icons/save.svg",
-    exportIcon: "/assets/icons/export.svg",
+    exportIcon: "/assets/icons/export-red.svg",
   },
   {
     id: 3,
@@ -21,7 +22,7 @@ export const cardData = [
     balance: "$ 200.31",
     percentage: "8%",
     icon: "/assets/icons/direct-up.svg",
-    exportIcon: "/assets/icons/export.svg",
+    exportIcon: "/assets/icons/export-yellow.svg",
   },
   {
     id: 4,
@@ -29,6 +30,6 @@ export const cardData = [
     balance: "$ 21,121.0",
     percentage: "20%",
     icon: "/assets/icons/direct-down.svg",
-    exportIcon: "/assets/icons/export.svg",
+    exportIcon: "/assets/icons/export-blue.svg",
   },
 ];

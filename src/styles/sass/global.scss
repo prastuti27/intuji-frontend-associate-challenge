@@ -84,20 +84,7 @@ section {
     margin-bottom: 24px;
   }
 }
-.card {
-  padding: 20px;
-  color: #ffffff;
-  border-radius: 14px;
-  border: 1px solid #dededeb2;
-  background-color: #ffffff;
-  &:first-child {
-    background-color: #4745a4;
-  }
-  h2,
-  h4 {
-    color: #ffffff;
-  }
-}
+
 .sidebar {
   max-width: 280px;
   width: 100%;
