@@ -60,7 +60,10 @@ const Header = () => {
         className={`d-lg-block ${styles.smallSidebar} ${isSidebarOpen ? styles.open : ""}`}
       >
         <div className={styles.mobileSidebar}>
-          <Sidebar menuItems={menuItems} />
+          <Sidebar
+            menuItems={menuItems}
+            onClose={() => setIsSidebarOpen(false)}
+          />
         </div>
       </div>
     </>

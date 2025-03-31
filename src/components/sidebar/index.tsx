@@ -5,21 +5,24 @@ interface MenuGroup {
   icon: string;
   link: string;
 }
-
 interface SidebarProps {
   menuItems: {
     items?: MenuGroup[];
     list?: MenuGroup[];
     menu?: MenuGroup[];
   };
+  onClose: () => void;
 }
 
-const Sidebar = ({ menuItems }: SidebarProps) => {
+const Sidebar = ({ menuItems, onClose }: SidebarProps) => {
   return (
     <>
       <div className={`${styles.logoContainer}`}>
         <div className={styles.logo}>
           <img src="/assets/icons/logo.svg" alt="Logo" />
+        </div>
+        <div className={`d-xl-none ${styles.closeIcon}`} onClick={onClose}>
+          <img src="/assets/icons/close.svg" alt="close" />
         </div>
       </div>
       <ul className={styles.menuGroup}>

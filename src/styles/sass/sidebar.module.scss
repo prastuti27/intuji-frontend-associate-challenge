@@ -10,7 +10,11 @@
     padding: 14px 77px;
   }
 }
-
+.closeIcon {
+  position: absolute;
+  top: -2px;
+  right: 0px;
+}
 .menuGroup {
   position: relative;
   padding-bottom: 32px;
