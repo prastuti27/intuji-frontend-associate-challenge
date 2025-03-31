@@ -14,27 +14,24 @@
 .card {
   padding: 20px;
 
-
   border-radius: 14px;
   border: 1px solid #dededeb2;
   background-color: #ffffff;
 
   h2,
   h4 {
-    color: #0D163A;
+    color: #0d163a;
   }
-  &.bgColor{
-    background-color: #4745A4;
+  &.bgColor {
+    background-color: #4745a4;
     h2,
     h4 {
-      color: #ffffff;;
+      color: #ffffff;
     }
   }
 }
 .cardContainer {
   display: flex;
-
-
 
   gap: 9px;
   border-bottom: 1px solid #e6e6e6;

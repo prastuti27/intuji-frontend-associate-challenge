@@ -118,19 +118,16 @@ section {
 }
 .overlay {
   position: fixed;
- inset :0;
-  background: rgba(0, 0, 0, 0.5); 
-  z-index: 1
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
-
-
 
 @media (min-width: 768px) {
   h4 {
     font-size: 16px;
   }
 
-  
   .header {
     padding: 32px;
   }

@@ -6,13 +6,19 @@ interface CardProps {
   percentage: string;
   icon: string;
   exportIcon: string;
-  firstChild?:boolean;
-
+  firstChild?: boolean;
 }
 
-const Card = ({ title, balance, percentage, icon, exportIcon,firstChild }: CardProps) => {
+const Card = ({
+  title,
+  balance,
+  percentage,
+  icon,
+  exportIcon,
+  firstChild,
+}: CardProps) => {
   return (
-    <div className={`${styles.card} ${firstChild? styles.bgColor:""} `}>
+    <div className={`${styles.card} ${firstChild ? styles.bgColor : ""} `}>
       <div className={styles.cardContainer}>
         <div className={styles.imgWrapper}>
           <img src={icon} alt={title} />
@@ -28,11 +34,11 @@ const Card = ({ title, balance, percentage, icon, exportIcon,firstChild }: CardP
       <div className="d-flex justify-content-between">
         <h2>{balance}</h2>
         <div>
-        {firstChild ? (
-  <img src="/assets/icons/arrow-light.svg" alt="arrow-light" />
-) : (
-  <img src="/assets/icons/arrow-dark.svg" alt="arrow-dark" />
-)}
+          {firstChild ? (
+            <img src="/assets/icons/arrow-light.svg" alt="arrow-light" />
+          ) : (
+            <img src="/assets/icons/arrow-dark.svg" alt="arrow-dark" />
+          )}
         </div>
       </div>
     </div>

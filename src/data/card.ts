@@ -6,7 +6,7 @@ export const cardData = [
     percentage: "15%",
     icon: "/assets/icons/wallet.svg",
     exportIcon: "/assets/icons/export-green.svg",
-    firstChild:true
+    firstChild: true,
   },
   {
     id: 2,
