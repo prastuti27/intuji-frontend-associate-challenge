@@ -11,7 +11,7 @@ interface SidebarProps {
     list?: MenuGroup[];
     menu?: MenuGroup[];
   };
-  onClose: () => void;
+  onClose?: () => void;
 }
 
 const Sidebar = ({ menuItems, onClose }: SidebarProps) => {
