@@ -1,0 +1,29 @@
+.transactionBox {
+  .transactionDetails {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .transactionIcon {
+    width: 48px;
+    height: 48px;
+    background-color: #00000033;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 4px;
+  }
+  p,
+  span {
+    font-weight: 600;
+  }
+  .transactionStatus {
+    color: #3bbb6e;
+  }
+}

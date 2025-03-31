@@ -1,0 +1,53 @@
+.imgWrapper {
+  padding: 8px;
+  border: 1px solid #dedede33;
+  border-radius: 50%;
+  max-height: 48px;
+
+  max-width: 48px;
+  display: flex;
+  img {
+    max-height: 32px;
+    max-width: 32px;
+  }
+}
+.card {
+  padding: 20px;
+
+  border-radius: 14px;
+  border: 1px solid #dededeb2;
+  background-color: #ffffff;
+
+  h2,
+  h4 {
+    color: #0d163a;
+  }
+  &.bgColor {
+    background-color: #4745a4;
+    h2,
+    h4 {
+      color: #ffffff;
+    }
+  }
+}
+.cardContainer {
+  display: flex;
+
+  gap: 9px;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  h4 {
+    margin-bottom: 9px;
+  }
+  .compareWrapper {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    img {
+      max-height: 14px;
+      max-width: 14px;
+    }
+  }
+}

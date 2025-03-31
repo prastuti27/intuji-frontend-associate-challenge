@@ -16,8 +16,8 @@ interface SidebarProps {
 
 const Sidebar = ({ menuItems }: SidebarProps) => {
   return (
-    <div className={styles.sidebar}>
-      <div className={styles.logoContainer}>
+    <>
+      <div className={`${styles.logoContainer}`}>
         <div className={styles.logo}>
           <img src="/assets/icons/logo.svg" alt="Logo" />
         </div>
@@ -33,28 +33,32 @@ const Sidebar = ({ menuItems }: SidebarProps) => {
         ))}
       </ul>
       <div className={styles.lastMenu}>
-        <ul>
-          {menuItems.list?.map((item, index) => (
-            <li key={index} className={styles.menuItem}>
-              <a href={item.link}>
-                <img src={item.icon} alt={item.label} />
-                {item.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-        <ul>
-          {menuItems.menu?.map((item, index) => (
-            <li key={index} className={styles.menuItem}>
-              <a href={item.link}>
-                <img src={item.icon} alt={item.label} />
-                {item.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div>
+          <ul>
+            {menuItems.list?.map((item, index) => (
+              <li key={index} className={styles.menuItem}>
+                <a href={item.link}>
+                  <img src={item.icon} alt={item.label} />
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <ul>
+            {menuItems.menu?.map((item, index) => (
+              <li key={index} className={styles.menuItem}>
+                <a href={item.link}>
+                  <img src={item.icon} alt={item.label} />
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

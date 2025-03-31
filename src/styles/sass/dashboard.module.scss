@@ -1,0 +1,27 @@
+.overviewBox {
+  h4 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+.planBox {
+  .planTitle {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dededeb2;
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .planBox {
+    display: flex;
+    gap: 28px;
+  }
+}
+@media (min-width: 1200px) {
+  .planBox {
+    max-width: 350px;
+    width: 100%;
+    display: block;
+  }
+}
