@@ -33,6 +33,8 @@ const Sidebar = ({ menuItems }: SidebarProps) => {
         ))}
       </ul>
       <div className={styles.lastMenu}>
+        <div>
+
         <ul>
           {menuItems.list?.map((item, index) => (
             <li key={index} className={styles.menuItem}>
@@ -43,6 +45,9 @@ const Sidebar = ({ menuItems }: SidebarProps) => {
             </li>
           ))}
         </ul>
+        </div>
+        <div>
+
         <ul>
           {menuItems.menu?.map((item, index) => (
             <li key={index} className={styles.menuItem}>
@@ -53,6 +58,7 @@ const Sidebar = ({ menuItems }: SidebarProps) => {
             </li>
           ))}
         </ul>
+        </div>
       </div>
     </>
   );

@@ -1,3 +1,4 @@
+
 .searchContainer {
   position: relative;
   width: 100%;
@@ -20,7 +21,7 @@
 .userContainer {
   display: flex;
   margin-top: 16px;
-  max-width: 350px;
+justify-content: end;
   width: 100%;
   align-items: center;
   gap: 10px;
@@ -66,8 +67,14 @@
   }
   .userContainer {
     margin-top: 0px;
+    max-width: 350px;
+    justify-content: start;
   }
   .searchBtn {
     left: 20px;
+  }
+  .headerContainer{
+    display: flex;
+    gap: 24px;
   }
 }

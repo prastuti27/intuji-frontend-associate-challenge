@@ -12,6 +12,8 @@ const Dashboard = () => {
   return (
     <>
       <div className="layout">
+        <div>
+
         <section className={styles.overviewBox}>
           <h3>Overview</h3>
           <div className="row custom-gap">
@@ -22,7 +24,14 @@ const Dashboard = () => {
             ))}
           </div>
         </section>
-        <section className={styles.planBox}>
+        
+        <section>
+          <AnalyticsChart colors={labelColors} />
+        </section>
+      </div>
+        <div className={styles.planBox}>
+
+        <section>
           <div className={`  ${styles.planTitle}`}>
             <h3>Saving Plan</h3>
             <a href="">See all</a>
@@ -38,12 +47,7 @@ const Dashboard = () => {
             ))}
           </div>
         </section>
-      </div>
-      <div className="layout">
-        <section>
-          <AnalyticsChart colors={labelColors} />
-        </section>
-        <section className={`${styles.planBox}`}>
+        <section >
           <div className={`  ${styles.planTitle}`}>
             <h3>Recent Transaction</h3>
             <a href="">See all</a>
@@ -52,6 +56,11 @@ const Dashboard = () => {
             <TransactionList transactions={transactions} />
           </div>
         </section>
+        </div>
+      {/* </div> */}
+      {/* <div className="layout"> */}
+       
+ 
       </div>
     </>
   );
